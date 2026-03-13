@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Student Enrollment App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Student Enrollment System</h1>
+<div class="container">
 
-<div class="form-container">
+    <h1>Student Enrollment System</h1>
 
-<input type="text" id="name" placeholder="Student Name">
-<input type="text" id="course" placeholder="Course">
-<button onclick="addStudent()">Enroll Student</button>
+    <!-- Enrollment Form -->
+    <div class="form-container">
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Enter student name" required>
+
+        <label for="course">Course</label>
+        <input type="text" id="course" placeholder="Enter course name" required>
+
+        <button onclick="addStudent()">Enroll Student</button>
+
+    </div>
+
+    <!-- Student List -->
+    <h2>Enrolled Students</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+        </tbody>
+
+    </table>
 
 </div>
-
-<h2>Enrolled Students</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Course</th>
-        </tr>
-    </thead>
-
-    <tbody id="studentTable">
-
-    </tbody>
-
-</table>
 
 <script src="script.js"></script>
 

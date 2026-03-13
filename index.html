@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Student Enrollment System</h1>
+
+<div class="form-container">
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="course" placeholder="Course">
+<button onclick="addStudent()">Enroll Student</button>
+
+</div>
+
+<h2>Enrolled Students</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+
+    <tbody id="studentTable">
+
+    </tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
